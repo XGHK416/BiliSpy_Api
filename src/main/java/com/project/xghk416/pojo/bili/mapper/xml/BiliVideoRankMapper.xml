@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.xghk416.pojo.bili.mapper.BiliVideoRankDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.xghk416.pojo.bili.BiliVideoRankPo">
+        <id column="id" property="id" />
+        <result column="video_id" property="videoId" />
+        <result column="rank" property="rank" />
+        <result column="section" property="section" />
+        <result column="uploader_id" property="uploaderId" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, video_id, rank, section, uploader_id, create_time
+    </sql>
+
+</mapper>

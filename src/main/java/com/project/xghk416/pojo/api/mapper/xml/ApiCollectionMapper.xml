@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.xghk416.pojo.api.mapper.ApiCollectionDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.xghk416.pojo.api.ApiCollectionPo">
+        <id column="id" property="id" />
+        <result column="api_id" property="apiId" />
+        <result column="api_name" property="apiName" />
+        <result column="api_useable" property="apiUseable" />
+        <result column="api_type" property="apiType" />
+        <result column="api_section" property="apiSection" />
+        <result column="api_url" property="apiUrl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        api_id, id, api_name, api_useable, api_type, api_section, api_url
+    </sql>
+
+</mapper>

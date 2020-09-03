@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.xghk416.pojo.bili.mapper.BiliDetectDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.xghk416.pojo.bili.BiliDetectPo">
+        <id column="detect_id" property="detectId" />
+        <result column="detect_type" property="detectType" />
+        <result column="have_detect" property="haveDetect" />
+        <result column="max_detect" property="maxDetect" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_id" property="createId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        detect_id, detect_type, have_detect, max_detect, create_time, update_time,create_id
+    </sql>
+
+</mapper>

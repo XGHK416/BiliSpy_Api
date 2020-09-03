@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.xghk416.pojo.announce.mapper.AnnounceDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.xghk416.pojo.announce.AnnouncePo">
+        <id column="id" property="id" />
+        <result column="announce_id" property="announceId" />
+        <result column="announce_text" property="announceText" />
+        <result column="create_time" property="createTime" />
+        <result column="create_mo_id" property="createMoId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        announce_id, announce_text, id, create_time, create_mo_id
+    </sql>
+
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.xghk416.pojo.detect.mapper.DetectVideoStateDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.xghk416.pojo.detect.DetectVideoStatePo">
+        <id column="id" property="id" />
+        <result column="detect_profile" property="detectProfile" />
+        <result column="detect_name" property="detectName" />
+        <result column="detect_id" property="detectId" />
+        <result column="create_id" property="createId" />
+        <result column="parent_detect_id" property="parentDetectId" />
+        <result column="create_time" property="createTime" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="corn_expression" property="cornExpression" />
+        <result column="is_close" property="isClose" />
+        <result column="detect_video_id" property="detectVideoId" />
+        <result column="auths" property="auths" />
+        <result column="auths_id" property="authsId" />
+        <result column="auths_profile" property="authsProfile" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, detect_profile,auths,auths_id,auths_profile detect_name, detect_id, create_id, parent_detect_id, create_time, start_time, end_time, corn_expression, is_close, detect_video_id
+    </sql>
+
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.xghk416.pojo.bili.mapper.BiliUploaderDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.xghk416.pojo.bili.BiliUploaderPo">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="nick_name" property="nickName" />
+        <result column="profile" property="profile" />
+        <result column="sex" property="sex" />
+        <result column="level" property="level" />
+        <result column="sign" property="sign" />
+        <result column="silence" property="silence" />
+        <result column="vip" property="vip" />
+        <result column="birthday" property="birthday" />
+        <result column="video_count" property="videoCount" />
+        <result column="follower" property="follower" />
+        <result column="following" property="following" />
+        <result column="last_update" property="lastUpdate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, nick_name, profile, sex, level, sign, silence, vip, birthday, video_count, follower, following, last_update
+    </sql>
+
+
+</mapper>

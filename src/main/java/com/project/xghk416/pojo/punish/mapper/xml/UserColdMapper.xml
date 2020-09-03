@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.xghk416.pojo.punish.mapper.UserColdDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.xghk416.pojo.punish.UserColdPo">
+        <id column="id" property="id" />
+        <result column="cold_user_id" property="coldUserId" />
+        <result column="create_time" property="createTime" />
+        <result column="create_mo_id" property="createMoId" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="cold_reason" property="coldReason" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        cold_user_id, create_time, create_mo_id, start_time, end_time, id, cold_reason
+    </sql>
+
+</mapper>

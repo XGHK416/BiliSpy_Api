@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.xghk416.pojo.api.mapper.ApiReportDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.project.xghk416.pojo.api.ApiReportPo">
+        <id column="id" property="id" />
+        <result column="api_id" property="apiId" />
+        <result column="report_reason" property="reportReason" />
+        <result column="create_time" property="createTime" />
+        <result column="create_user" property="createUser" />
+        <result column="is_fix" property="isFix" />
+        <result column="fixed_user" property="fixedUser" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        api_id, id, report_reason, create_time, create_user, is_fix, fixed_user
+    </sql>
+
+</mapper>
